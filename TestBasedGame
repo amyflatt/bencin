@@ -1,0 +1,42 @@
+using System;
+
+class TBGclass
+{
+	static void Main(string[]args)
+	{
+
+		string result;
+		Console.WriteLine("This is an example code for a text based game in C#." +
+		                  "Feel free to modify this to create your own game.");
+		Console.WriteLine("You find yourself in a small boat. Seems the boat is out on a lake." +
+		                  "You have no memory of the night before");
+		Console.WriteLine ("You are lying down. Do you: choose S to sit up; " +
+			"remain lying down, choose E ,to examine the scene for a minute;" +
+			"or choose L to listen and see if you hear anyone near by.");
+
+		result =(Console.ReadLine());
+		if (result=="S") 
+		{
+			Console.WriteLine ("You sit up and your head starts pounding. " +
+				"Did anyone get the number of that Mack truck?" +
+				"You notice the boat is in the middle of a small lake." +
+				"North(N) there are cliffs that appear to be insurmountable." +
+				"South(So) there are a field of oddly shaped flowers," +
+				"in fact there is something about the scene that is slightly off." +
+				"East(E) there does not seem to be any scenery, How odd! You hear a " +
+				"rushing of water coming from that direction.  Your boat is slowly beginning to pull East." +
+				"West (W) you notice a thick forest and smoke curling above some of the hills. " +
+				"Could that be a sign of civiliation? " +
+				"Choose a direction:N,So,E,W: ");
+			//call testsub
+			string direction = Console.ReadLine();
+			TestSub(direction);
+
+		}
+	}
+	static void TestSub(string direction){
+		//branch 
+		Console.WriteLine (direction);
+		Console.WriteLine ("yo");
+	}
+}
