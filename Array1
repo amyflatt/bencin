@@ -1,0 +1,22 @@
+using System;
+
+namespace arrayPractice1
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			int[] numbers = new int[5];
+			numbers [0] = 8;
+			numbers [1] = 9;
+			numbers [2] = 3;
+			numbers [3] = 5;
+
+			for (int i= 0; i < numbers.Length; i++)
+			{
+				Console.Write (numbers [i] + "  ");
+			}
+			Console.ReadKey ();
+		}
+	}
+}
